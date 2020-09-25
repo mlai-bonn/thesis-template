@@ -3,6 +3,10 @@
 \section{Floating-Environments} 
 % Figures, Tables, TikZ 
 
+Figures and tables should be put in floating environments.
+Figure~\ref{fig:example-fig} shows an example of a floating figure.
+Table~\ref{tab:example-table} shows an example of a floating table.
+
 \begin{table}[ht]
 	\centering
 	\begin{tabular}{ccc}
@@ -27,6 +31,42 @@
 
 \section{Algorithms} 
 % 
+Algorithms should be in floating environments. 
+Algorithm~\ref{alg:swap} shows a levelwise graph mining algorithm taken from \cite{theoremofbenda}.
+You can reference individual lines in the algorithm, for example Line~\ref{algline:swap:return}.
+
+\begin{algorithm} 
+\begin{tabbing}
+output \= : \= \kill
+input \> : \> A set of people $P$ who have been mindswapped, plus two helpers $a,b$ \\
+\>\>who have never been mindswapped \\
+output \> : \> $P \cup \{a,b\}$ with the right minds in the right bodies \\
+\end{tabbing}
+
+\begin{algorithmic}[1]
+
+\State Have everybody who's messed up arrange themselves in circles of "conga lines", i.e. everyone's front facing someone's back, each facing the body their mind should land in (e.g., if Fry's mind is in Zoidberg's body, then Zoidberg's body should face the back of Fry's body).
+
+\ForAll{Circle}
+
+	\State Start each time with Helper $a$ and Helper $b$'s minds in either their own or each other's bodies
+
+	\State Pick any circle of messed-up people you like and unwrap it into a line with whoever you like at the front
+
+	\State Swap the mind at the front of the line into Helper $a$'s body
+
+	\State From back to front, have everybody in the line swap minds with Helper $b$'s body in turn. (This moves each mind in the line, apart from the front one, forward into the right body. The last switch puts Helper $a$'s mind into Helper $b$'s body.)
+
+	\State Swap the mind in Helper $a$'s body back where it belongs, into the body at the back of the line. This puts Helper $b$'s mind in Helper $a$'s body. Now the circle/line has been completely fixed. The one side effect is that for each time a circle is fixed, the Helpers' minds will switch places, but that's OK, see below\label{algline:swap:return}
+\EndFor
+
+\State At the very end, after all the circles have been fixed, mind-swap the two Helpers if necessary (i.e., in case there was originally an odd number of messed-up circles) 
+
+\end{algorithmic}
+\vspace{1em}
+\caption{Mind Swapping Algorithm}
+\label{alg:swap}
+\end{algorithm}
 
 \section{Theorem-like Environments} 
 % list the predefined environments
