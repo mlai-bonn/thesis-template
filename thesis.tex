@@ -1,0 +1,67 @@
+% !TeX program = lualatex 
+\documentclass[ba,logo]{mlai-thesis} 
+
+\input{preamble.tex} 
+
+\title{The Hitchhiker's Guide to the MLAI \LaTeX{} Template} 
+\author{Philip J. Fry\\\birthinfo{August 14, 1974 in Brooklyn, New York}}
+
+\thesistype{Manual} 
+\examiner{%
+	Prof. Dr. Hubert J. Farnsworth\\Mars University \and 
+	Dr. Ogden Wernstrom\\Mars University
+}
+\supervisor{Ethan ``Bubblegum'' Tate\\ Harlem Globetrotters}
+
+\addbibresource{references.bib} 
+\usepackage{blindtext}
+\begin{document}	
+	\frontmatter 
+	
+	\maketitle 
+	
+	\cleardoublepage
+	\begin{abstract}
+		\blindtext[3]
+	\end{abstract}
+
+	\chapter*{Acknowledgements}  
+	
+	\cleardoublepage
+	\chapter*{Statement of Authorship} 
+	\input{authorship-en.tex} 
+	%\input{authorship-de.tex} 
+	
+	\cleardoublepage
+	\tableofcontents
+	
+	
+	\mainmatter
+	
+	\include{introduction} 
+	
+	%\include{related-work} 
+	
+	%\include{preliminaries}
+	
+	\include{setup} 
+	
+	\include{feature-reel}
+	
+	\include{useful-additions} 
+	
+	\include{conclusions} 
+	
+	\backmatter
+	
+	\printbibliography[heading=bibintoc]
+	
+	\listoffigures
+	
+	\listoftables
+	
+	\appendix
+	
+	\chapter{Known Issues}  
+	
+\end{document}
