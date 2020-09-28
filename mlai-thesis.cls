@@ -13,7 +13,7 @@
 \ProcessOptions \relax 
 
 
-\LoadClass[twoside,11pt,a4paper,fleqn]{book}
+\LoadClass[twoside,11pt,a4paper]{book}
 
 \RequirePackage{translations} 
 
@@ -118,10 +118,6 @@
 \definecolor{ub-yellow}{cmyk}{0,0.3,1,0}
 \definecolor{ub-gray}{cmyk}{0,0,0.15,0.55}
 
-\RequirePackage[intlimits,fleqn]{amsmath}
-\RequirePackage{amssymb,mathtools}
-\RequirePackage[thmmarks]{ntheorem}
-
 \fancypagestyle{mlai-fancy}{
 	\fancyhf{}
 	\fancyfoot[LE,RO]{\sffamily\small\thepage}
@@ -143,6 +139,8 @@
 \pagestyle{mlai-fancy} 
 \AtBeginDocument{\thispagestyle{plain}} 
 
+\RequirePackage[intlimits]{mathtools}
+
 \RequirePackage[thmmarks]{ntheorem}
 \theoremstyle{break}
 \theorembodyfont{\normalfont}
@@ -151,7 +149,7 @@
 \theorempostskip{1em}
 \theoremsymbol{\ensuremath{\diamond}}
 
-\newtheorem{thm}{Theorem}
+\newtheorem{thm}{Theorem}[chapter]
 \newtheorem{lem}[thm]{Lemma}
 \newtheorem{prop}[thm]{Proposition}
 \newtheorem{cor}[thm]{Corollary}
@@ -159,14 +157,14 @@
 \newtheorem{exa}[thm]{Example}
 \newtheorem{exas}[thm]{Examples}
 
-\newtheorem{probT}[thm]{Problem}
-\newtheorem{probsT}[thm]{Problems}
+\newtheorem{prblm}[thm]{Problem}
+\newtheorem{prblms}[thm]{Problems}
 
 \newtheorem{quest}{Question}
 \newtheorem{quests}{Questions}
 
-\newtheorem{rem}[thm]{Remark}
-\newtheorem{rems}[thm]{Remarks}
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{rmks}[thm]{Remarks}
 
 \newtheorem{defn}[thm]{Definition}
 
