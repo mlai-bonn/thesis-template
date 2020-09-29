@@ -54,13 +54,23 @@
 	
 	\include{conclusions} 
 	
-	\backmatter
+	% Workaround: 
+	% The backmatter deactivates chapter numbering for the appendices which are 
+	% supposed to appear in the backmatter _after_ the bibliography. This makes 
+	% referencing the appendices a hassle. A workaround is to put the
+	% backmatter, bibilography, and lists-of in a LaTeX group using \begingroup 
+	\begingroup 
 	
+	\backmatter
+		
 	\printbibliography[heading=bibintoc]
 	
 	\listoffigures
 	
 	\listoftables
+	
+	\endgroup 
+	% End of Workaround 
 	
 	\appendix
 	
