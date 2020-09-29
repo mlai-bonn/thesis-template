@@ -57,7 +57,7 @@
 			\null\vskip16mm
 		\else 
 			\begin{flushright}
-				\includegraphics[height=16mm]{gfx/ubn-logo-14}
+				\includegraphics[height=16mm]{gfx/ubn-logo}
 				\includegraphics[height=16mm]{gfx/mlai-logo}\par
 			\end{flushright}
 		\fi 
