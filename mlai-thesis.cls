@@ -141,7 +141,7 @@
 
 \RequirePackage[intlimits]{mathtools}
 
-\RequirePackage[thmmarks]{ntheorem}
+\RequirePackage[amsmath,thmmarks]{ntheorem}
 \theoremstyle{break}
 \theorembodyfont{\normalfont}
 \theoremseparator{.}
