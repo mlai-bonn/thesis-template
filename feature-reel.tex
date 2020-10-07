@@ -2,7 +2,7 @@
 
 \section{Maths}
 
-\LaTeX{} shines when it comes to typesetting maths. This should work as expected when using this template, see Eq.~\eqref{eq:gauss-integral}. 
+\LaTeX{} shines when it comes to typesetting maths. This should work as expected when using this template, see \Cref{eq:gauss-integral}. 
 \begin{equation}\label{eq:gauss-integral}
 	\int_{-\infty}^{\infty} \mathrm{e}^{-x^2} \enspace \mathrm{d}x = \sqrt{\pi} 
 \end{equation}
@@ -11,8 +11,8 @@
 % Figures, Tables, TikZ 
 
 Figures and tables should be put in floating environments.
-Figure~\ref{fig:example-fig} shows an example of a floating figure.
-Table~\ref{tab:example-table} shows an example of a floating table.
+\Cref{fig:example-fig} shows an example of a floating figure.
+\Cref{tab:example-table} shows an example of a floating table.
 
 \begin{table}[ht]
 	\centering
@@ -39,8 +39,8 @@ Table~\ref{tab:example-table} shows an example of a floating table.
 \section{Algorithms} 
 % 
 Algorithms should be in floating environments. 
-Algorithm~\ref{alg:swap} shows a levelwise graph mining algorithm taken from \cite{theoremofbenda}.
-You can reference individual lines in the algorithm, for example Line~\ref{algline:swap:return}.
+\Cref{alg:swap} shows a levelwise graph mining algorithm taken from \cite{theoremofbenda}.
+You can reference individual lines in the algorithm, for example \Cref{algline:swap:return}.
 
 \begin{algorithm} 
 \begin{tabbing}
@@ -96,7 +96,7 @@ The \texttt{mlai-thesis} class provides the following set of theorem-like enviro
 	\item[quests] Used for multiple \emph{questions}. 
 \end{description}
 
-The advantage of using theorem-like environments is not only that they are more prominent in the text emphasizing central notions and results but also that they can be labeled and referenced. The usage of theorem-like environments and how to reference them is demonstrated below. For instance, Problem~\ref{prblm:mind-switching-problem} was produced by the following \LaTeX{} code: 
+The advantage of using theorem-like environments is not only that they are more prominent in the text emphasizing central notions and results but also that they can be labeled and referenced. The usage of theorem-like environments and how to reference them is demonstrated below. For instance,~\Cref{prblm:mind-switching-problem} was produced by the following \LaTeX{} code: 
 \begin{Verbatim}
 \begin{prblm}[Mind-Switching Problem] 
 	\label{prblm:mind-switching-problem}

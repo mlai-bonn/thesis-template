@@ -142,37 +142,6 @@
 \RequirePackage[intlimits]{mathtools}
 
 \RequirePackage[amsmath,thmmarks]{ntheorem}
-\theoremstyle{break}
-\theorembodyfont{\normalfont}
-\theoremseparator{.}
-\theorempreskip{1em}
-\theorempostskip{1em}
-\theoremsymbol{\ensuremath{\diamond}}
-
-\newtheorem{thm}{Theorem}[chapter]
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{prop}[thm]{Proposition}
-\newtheorem{cor}[thm]{Corollary}
-
-\newtheorem{exa}[thm]{Example}
-\newtheorem{exas}[thm]{Examples}
-
-\newtheorem{prblm}[thm]{Problem}
-\newtheorem{prblms}[thm]{Problems}
-
-\newtheorem{quest}{Question}
-\newtheorem{quests}{Questions}
-
-\newtheorem{rmk}[thm]{Remark}
-\newtheorem{rmks}[thm]{Remarks}
-
-\newtheorem{defn}[thm]{Definition}
-
-\theoremstyle{nonumberplain}
-\theoremheaderfont{\itshape}
-\theoremsymbol{\rule{1ex}{1ex}}
-
-\newtheorem{proof}{Proof} 
 
 \newenvironment{abstract}{
 \small%

@@ -28,8 +28,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Citation Package
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\usepackage{varioref}
 \usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{cleveref}
 \usepackage[backend=biber,style=authoryear]{biblatex}
 \renewcommand*{\nameyeardelim}{\addcomma\space} 
 
@@ -73,3 +74,38 @@
 \usepackage{fancyvrb}
 
 \RecustomVerbatimEnvironment{Verbatim}{Verbatim}{xleftmargin=\parindent,numbers=left,firstnumber=last,tabsize=4} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theoremstyles
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\theoremstyle{break}
+\theorembodyfont{\normalfont}
+\theoremseparator{.}
+\theorempreskip{1em}
+\theorempostskip{1em}
+\theoremsymbol{\ensuremath{\diamond}}
+
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+
+\newtheorem{exa}[thm]{Example}
+\newtheorem{exas}[thm]{Examples}
+
+\newtheorem{prblm}[thm]{Problem}
+\newtheorem{prblms}[thm]{Problems}
+
+\newtheorem{quest}{Question}
+\newtheorem{quests}{Questions}
+
+\newtheorem{rmk}[thm]{Remark}
+\newtheorem{rmks}[thm]{Remarks}
+
+\newtheorem{defn}[thm]{Definition}
+
+\theoremstyle{nonumberplain}
+\theoremheaderfont{\itshape}
+\theoremsymbol{\rule{1ex}{1ex}}
+
+\newtheorem{proof}{Proof}

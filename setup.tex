@@ -16,13 +16,13 @@ This thesis template includes the following files
 		\item redefines the \verb|\maketitle| command for a 
 		proper title page layout, 
 		\item provides an \texttt{abstract} environment, and 
-		\item defines a default set of theorem-like environments (see, Section~\ref{sec:theorem-like-environments}). 
+		\item defines a default set of theorem-like environments (see, \Cref{sec:theorem-like-environments}). 
 	\end{itemize}
 	Since this file defines the most basic layout of theses, you should only make changes to it in consultation with your supervisor(s). 
 	\item[thesis.tex] This is the root file of this demo document. It 
 	\begin{itemize}
 		\item sets the document class to \texttt{mlai-thesis},
-		\item defines title, author, examiners, etc. (see Section~\ref{sec:title-page}), and 
+		\item defines title, author, examiners, etc. (see \Cref{sec:title-page}), and 
 		\item includes other files such as the \texttt{preamble.tex} and the chapter files.\VerbatimFootnotes\footnote{ Note the difference between \verb|\input| and \verb|\include|}
 	\end{itemize}
 	\item[preamble.tex] This file provides useful packages, commands, and default settings. Note that these packages and settings are carefully chosen so that the overall appearance of the thesis is consistent and appealing. However, the specifics of your workflow and problem setting may require different settings. Feel free to customize this file. For instance, the \texttt{preamble.tex} loads the \texttt{biblatex} package with \texttt{biber} as a citation backend\footnote{If you use a \LaTeX{} editor such as TeXstudio, it is recommended to configure the bibliography command accordingly}. If you are accustomed to the \texttt{bibtex8} backend or to \texttt{natbib}, you can change the file to load those settings. 
