@@ -25,17 +25,6 @@
 % PDFLaTeX 
 %\usepackage[ngerman]{babel}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Citation Package
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{varioref}
-\usepackage[hidelinks,breaklinks]{hyperref}
-\usepackage{cleveref}
-\usepackage[backend=biber,style=authoryear]{biblatex}
-\renewcommand*{\nameyeardelim}{\addcomma\space} 
-
-
-
 \usepackage{algorithm}
 \usepackage[noend]{algpseudocode}
 
@@ -74,6 +63,16 @@
 \usepackage{fancyvrb}
 
 \RecustomVerbatimEnvironment{Verbatim}{Verbatim}{xleftmargin=\parindent,numbers=left,firstnumber=last,tabsize=4} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Citation Package
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{varioref}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\usepackage{cleveref}
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\renewcommand*{\nameyeardelim}{\addcomma\space} 
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Theoremstyles
