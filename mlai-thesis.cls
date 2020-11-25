@@ -13,7 +13,7 @@
 \ProcessOptions \relax 
 
 
-\LoadClass[twoside,11pt,a4paper,fleqn]{book}
+\LoadClass[twoside,11pt,a4paper]{book}
 
 \RequirePackage{translations} 
 
@@ -57,7 +57,7 @@
 			\null\vskip16mm
 		\else 
 			\begin{flushright}
-				\includegraphics[height=16mm]{gfx/ubn-logo-14}
+				\includegraphics[height=16mm]{gfx/ubn-logo}
 				\includegraphics[height=16mm]{gfx/mlai-logo}\par
 			\end{flushright}
 		\fi 
@@ -127,9 +127,6 @@
             bookmarksnumbered=true
             }
 
-\RequirePackage[intlimits,fleqn]{amsmath}
-\RequirePackage{amssymb,mathtools}
-\RequirePackage[thmmarks]{ntheorem}
 
 \fancypagestyle{mlai-fancy}{
 	\fancyhf{}
@@ -152,38 +149,9 @@
 \pagestyle{mlai-fancy} 
 \AtBeginDocument{\thispagestyle{plain}} 
 
-\RequirePackage[thmmarks]{ntheorem}
-\theoremstyle{break}
-\theorembodyfont{\normalfont}
-\theoremseparator{.}
-\theorempreskip{1em}
-\theorempostskip{1em}
-\theoremsymbol{\ensuremath{\diamond}}
+\RequirePackage[intlimits]{mathtools}
 
-\newtheorem{thm}{Theorem}
-\newtheorem{lem}[thm]{Lemma}
-\newtheorem{prop}[thm]{Proposition}
-\newtheorem{cor}[thm]{Corollary}
-
-\newtheorem{exa}[thm]{Example}
-\newtheorem{exas}[thm]{Examples}
-
-\newtheorem{probT}[thm]{Problem}
-\newtheorem{probsT}[thm]{Problems}
-
-\newtheorem{quest}{Question}
-\newtheorem{quests}{Questions}
-
-\newtheorem{rem}[thm]{Remark}
-\newtheorem{rems}[thm]{Remarks}
-
-\newtheorem{defn}[thm]{Definition}
-
-\theoremstyle{nonumberplain}
-\theoremheaderfont{\itshape}
-\theoremsymbol{\rule{1ex}{1ex}}
-
-\newtheorem{proof}{Proof} 
+\RequirePackage[amsmath,thmmarks]{ntheorem}
 
 \newenvironment{abstract}{
 \small%
