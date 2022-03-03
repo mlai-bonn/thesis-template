@@ -30,7 +30,9 @@
 \DeclareTranslation{English}{born}{born}
 \DeclareTranslation{German}{born}{geboren am} 
 \DeclareTranslation{English}{abstractname}{Abstract}
-\DeclareTranslation{German}{abstractname}{Zusammenfassung} 
+\DeclareTranslation{German}{abstractname}{Zusammenfassung}
+\DeclareTranslation{English}{matriculationnumber}{Matriculation number}
+\DeclareTranslation{German}{matriculationnumber}{Matrikelnummer}
 
 \RequirePackage{fmtcount}
 
@@ -49,6 +51,7 @@
 \let\supervisor\setsupervisor
 
 \newcommand{\birthinfo}[1]{\normalsize \GetTranslation{born} #1}
+\newcommand{\matricnumber}[1]{\normalsize \GetTranslation{matriculationnumber}: #1}
 
 \let\oldmaketitle\maketitle
 \renewcommand{\maketitle}{
